@@ -34,6 +34,7 @@ var bowerComponentsDir = baseDirs.root + 'bower_components/';
 var appFiles = {
   js: [
     bowerComponentsDir + 'jquery/dist/jquery.min.js', // source bower
+    bowerComponentsDir + 'tether/dist/js/tether.js',
     bowerComponentsDir + 'angular/angular.min.js', // source bower
     bowerComponentsDir + 'angular-route/angular-route.min.js', // source bower
     bowerComponentsDir + 'bootstrap/dist/js/bootstrap.min.js', // source bower
@@ -44,6 +45,7 @@ var appFiles = {
   ],
   css: [
     bowerComponentsDir + 'bootstrap/dist/css/bootstrap.min.css', // source css
+    bowerComponentsDir + 'tether/dist/js/tether.min.css',
     baseDirs.app + 'assets/css/**/*.css' // 
   ],
   index: [
@@ -109,19 +111,6 @@ gulp.task('dev:minifyhtml', function() {
     .pipe(gulp.dest(baseDirs.dist))
 });
 
-gulp.task('nodemon', function () {
-  nodemon({
-      script: baseDirs.root + startupScript,
-      ext: 'js',
-      ignore: [
-        baseDirs.app + '/'
-      ]
-    })
-    .on('restart', function () {
-      console.log('Magic restarted');
-    });
-});
-
 gulp.task('livereload', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml','dev:imageminify'], function () {
   return gulp.src(appFiles.index)
     .pipe(livereload());
@@ -150,6 +139,15 @@ gulp.task('dev:minifyjs', function() {
     .pipe(gulp.dest(baseDirs.dist + publicDirs.js));
 });
 
+
 gulp.task('default', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml']);
-gulp.task('watch', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml','dev:imageminify','live']);
 gulp.task('build', ['dev:concatjs', 'dev:concatcss', 'dev:minifycss', 'dev:minifyjs', 'dev:minifyhtml','dev:imageminify']);
+
+
+
+
+
+
+
+
+

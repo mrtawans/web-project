@@ -1,98 +1,113 @@
 body {
-	background: #f5f5f5;
-    color: #404040;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-collapse .container-fluid {
+  padding: 2rem 2.5rem;
+  border-bottom: 1px solid #55595c;
+}
+
+.navbar-collapse h4 {
+  color: #818a91;
+}
+
+.navbar-collapse .text-muted {
+  color: #818a91;
+}
+
+.about {
+  float: left;
+  max-width: 30rem;
+  margin-right: 3rem;
+}
+
+.social a {
+  font-weight: 500;
+  color: #eceeef;
+}
+.social a:hover {
+  color: #fff;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  background: url(/images/People1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+  opacity: 0.75;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #eee;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+
+
+#main__page {
+    min-height: 500px;
+}
+
+
  
-/* Button */
-a.my-button {
-    background-color: #3d77b4;
-    background-image: -webkit-linear-gradient(top, rgb(70, 135, 206) 0%, rgb(48, 104, 162) 100%);
-    background-image: -moz-linear-gradient(top, rgb(70, 135, 206) 0%, rgb(48, 104, 162) 100%);
-    border-radius: 0px;
-    border: 1px solid #1e4c7a;
-    color: #ffffff;
-    display: inline-block;
-    height: auto;
-    text-align: center;
-    text-shadow: rgb(32, 80, 129) 0px 1px 0px;
-}
-.navbar-btn {
-    margin-top: 4px;
-    margin-bottom: 4px;
-}
-.btn.focus, .btn:focus, .btn:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Navbar */
-.navbar-inverse .navbar-nav>li>a {
-    color: #fff;
-}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: rgb(26, 66, 107);
-    border-left: 1px solid #31577D;
-    border-right: 1px solid #31577D;
-}
-.navbar-inverse {
-	background: #205081;
-    border-bottom: 1px solid #1B426B;
-}
-.navbar .img-logo {
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    color: #fff;
-    position: relative;
-    top: -4px;
-}
-.navbar a i {
-    font-size: 20px;
-}
-.img-nav {
-    width: 25px;
-    height: 25px;
-    margin-top: -3px;
-}
-.navbar-nav li {
-	margin-left: 5px;
-}
-.navbar-form {
-    margin-top: 6px;
-}
-/* Footer */
-.footer-links {
-	font-size: 80%;
-}
-
-
-/* Panel */
-.panel-white {
-    border: 1px solid #ddd;
-}
-.panel-white .panel-title {
-    font-size: 13px;
-}
-.panel-white .panel-heading {
-    box-shadow: 0 1px 7px rgba(0,0,0,.14);
-    color: #333;
-}
-.panel-white .panel-heading a {
-	font-size: 12px;
-	position: relative;
-    top: -2px;
-}
-.panel-white .panel-footer, .panel-white .panel-heading {
-    background-color: #fff;
-    border-color: #ddd;
-}
-
-
-
-
-
 
 
 
