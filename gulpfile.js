@@ -150,6 +150,6 @@ gulp.task('dev:minifyjs', function() {
     .pipe(gulp.dest(baseDirs.dist + publicDirs.js));
 });
 
-gulp.task('default', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml','dev:imageminify']);
+gulp.task('default', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml']);
 gulp.task('watch', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml','dev:imageminify','live']);
 gulp.task('build', ['dev:concatjs', 'dev:concatcss', 'dev:minifycss', 'dev:minifyjs', 'dev:minifyhtml','dev:imageminify']);
