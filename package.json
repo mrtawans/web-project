@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "*",
+    "express": "^4.13.1",
+    "jsonwebtoken": "^5.7.0",
+    "mongodb": "^2.1.14",
+    "mongoose": "^4.3.1",
+    "morgan": "*",
+    "path": "*"
+  },
   "devDependencies": {},
   "scripts": {
     "postinstall": "bower install && npm install",
