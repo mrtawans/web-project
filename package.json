@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/mrtawans/web-project#readme",
   "engines": {
-    "node": "4.2.1"
+    "node": "5.11.0",
+    "npm":"3.8.6"
   }
 
 }
