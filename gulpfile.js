@@ -13,7 +13,8 @@ var angularTemplateCache = require('gulp-angular-templatecache');
 var addStream = require('add-stream');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-
+var gutil = require('gulp-util');
+var runSequence = require('run-sequence');
 
 var baseDirs = {
   root: './',
@@ -142,7 +143,14 @@ gulp.task('dev:minifyjs', function() {
 
 gulp.task('default', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml']);
 gulp.task('build', ['dev:concatjs', 'dev:concatcss', 'dev:minifycss', 'dev:minifyjs', 'dev:minifyhtml','dev:imageminify']);
-
+gulp.task('production', function() {
+  runSequence(
+    'dev:concatjs', 'dev:concatcss', 'dev:minifycss', 'dev:minifyjs', 'dev:minifyhtml','dev:imageminify',
+    function() {
+      gutil.log(gutil.colors.magenta('Your application ready for production'));
+      gutil.beep();
+    });
+});
 
 
 
