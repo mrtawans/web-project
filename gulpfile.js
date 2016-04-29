@@ -50,7 +50,7 @@ var appFiles = {
     baseDirs.app + 'assets/css/**/*.css' // 
   ],
   index: [
-    baseDirs.app + 'views/index.html'
+    baseDirs.app + 'views/*.html'
   ]
 };
 
@@ -112,7 +112,7 @@ gulp.task('dev:minifyhtml', function() {
     .pipe(gulp.dest(baseDirs.dist))
 });
 
-gulp.task('livereload', ['dev:concatjs', 'dev:concatcss', 'dev:minifyhtml','dev:imageminify'], function () {
+gulp.task('livereload', ['dev:concatjs', 'dev:concatcss','dev:minifycss','dev:minifyjs', 'dev:minifyhtml','dev:imageminify'], function () {
   return gulp.src(appFiles.index)
     .pipe(livereload());
 });
@@ -121,7 +121,8 @@ gulp.task('live', function () {
   livereload.listen();
   gulp.watch([
       appFiles.js,
-      appFiles.css
+      appFiles.css,
+      appFiles.index
     ], ['livereload'])
     .on('change', function(event) {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');

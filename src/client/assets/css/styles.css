@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: #fafafa;
 }
 
 html {
@@ -117,4 +117,83 @@ footer p {
     z-index:3;
 }
  
+
+section#main__container {
+    margin: 50px auto;
+}
+
+.bg-faded {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+
+}
+.navbar {
+  border-radius: 0rem !important;
+}
+
+.jumbotron button.close {
+  position: absolute;
+  right: 16px;
+  top: 60px;
+  font-size: 30px;
+  color: black;
+  opacity: 0.7;
+}
+
+section.jumbotron {
+  border-bottom: 1px solid rgba(153, 154, 155, 0.27);
+}
+section.jumbotron-headline {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  margin: 0px auto;
+  left: 0px;
+  right: 0px;
+  top: 32px;
+  padding-top: 50px;
+  text-align: center;
+}
+section.jumbotron-headline .jumbotron-headline-text {
+    width: 25%;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 2px;
+    opacity: ;
+    padding: 19px 10px 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

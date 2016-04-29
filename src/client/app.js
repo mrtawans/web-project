@@ -4,5 +4,6 @@ angular.module('myApp',
 	'appTemplates',
 	'appRoutes', 
 	'appIndexController', 
-	'appIndexService'
+	'appIndexService',
+  'appPageController'
 ]);
