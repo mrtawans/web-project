@@ -47,7 +47,7 @@ var appFiles = {
   css: [
     bowerComponentsDir + 'bootstrap/dist/css/bootstrap.min.css', // source css
     bowerComponentsDir + 'tether/dist/js/tether.min.css',
-    baseDirs.app + 'assets/css/**/*.css' // 
+    baseDirs.app + 'assets/css/*.css' //
   ],
   index: [
     baseDirs.app + 'views/*.html'
@@ -60,14 +60,14 @@ var concatFilenames = {
 };
 
 var startupScript = 'server.js';
- 
+
 function prepareTemplates() {
-  return gulp.src(baseDirs.app+'views/**/*.html')
+  return gulp.src(baseDirs.app+'views/*.html')
   	.pipe(htmlify())
     .pipe(minifyHTML({empty: true}))
     .pipe(angularTemplateCache({
-      module:'appTemplates', 
-      standalone: true, 
+      module:'appTemplates',
+      standalone: true,
       root: 'views/'
     }));
 }
@@ -152,11 +152,3 @@ gulp.task('production', function() {
       gutil.beep();
     });
 });
-
-
-
-
-
-
-
-

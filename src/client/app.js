@@ -5,5 +5,5 @@ angular.module('myApp',
 	'appRoutes', 
 	'appIndexController', 
 	'appIndexService',
-  'appPageController'
+	'appPageController'
 ]);

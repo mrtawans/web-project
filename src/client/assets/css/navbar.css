@@ -1,0 +1,19 @@
+.navbar-brand {
+    color: #5e5e5e;
+    background-color: transparent;
+    width: 200px;
+    margin: 0px auto;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+a.navbar-brand {
+    text-indent: -9999px;
+}
+a.navbar-brand .logo {
+  background:url(images/logo-web-small.png)
+}
+.navbar-toggle {
+    z-index:3;
+}
